@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: cursospring
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Felipe
+Implementation-Vendor-Id: com.felipemachado.cursospring
+Build-Jdk: 1.8.0_171
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/cursospring
+Created-By: Maven Integration for Eclipse
+
