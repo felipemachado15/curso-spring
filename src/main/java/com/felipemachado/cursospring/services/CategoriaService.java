@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.felipemachado.cursospring.domain.Categoria;
 import com.felipemachado.cursospring.repositories.CategoriaRepository;
+import com.felipemachado.cursospring.services.exceptions.ObjectNotFoundException;
 @Service
 public class CategoriaService {
 
@@ -15,7 +16,9 @@ public class CategoriaService {
 
 	public Categoria find(Integer id) {
 		Optional<Categoria> obj = repo.findById(id);
-		return obj.orElse(null);
+		//chamamos nosso objeto da excessão e lançamos o erro
+		return obj.orElseThrow(() -> new ObjectNotFoundException(
+				"Objeto não encontrado! Id: " + id + ", Tipo: " + Categoria.class.getName()));
 
 	}
 
