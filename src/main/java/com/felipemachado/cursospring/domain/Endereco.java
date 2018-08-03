@@ -32,6 +32,9 @@ public class Endereco implements Serializable {
 	@ManyToOne
 	@JoinColumn(name = "Cidade_id")
 	private Cidade cidade;
+	
+	
+	
 
 	public Endereco() {
 		super();
